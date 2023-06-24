@@ -2,10 +2,10 @@ using webapi_course.Models;
 
 namespace webapi_course.Services;
 
-public class CategoriesService : ICategoryService {
+public class CategoryService : ICategoryService {
   AssignmentsContext context;
 
-  public CategoriesService(AssignmentsContext dbContext) {
+  public CategoryService(AssignmentsContext dbContext) {
     context = dbContext;
   }
 
