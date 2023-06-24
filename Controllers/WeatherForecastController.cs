@@ -35,6 +35,8 @@ public class WeatherForecastController : ControllerBase
     [Route("[action]")]
     public IEnumerable<WeatherForecast> Get()
     {
+        _logger.LogDebug("Returnig the weatherforecast list");
+
         return ListWeatherForecasts;
     }
 
