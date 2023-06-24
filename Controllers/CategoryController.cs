@@ -6,7 +6,7 @@ namespace webapi_course.Controllers;
 
 [Route("api/[controller]")]
 public class CategoryController : ControllerBase {
-  ICategoryService categoryService;
+  protected readonly ICategoryService categoryService;
 
   public CategoryController(ICategoryService service) {
     categoryService = service;

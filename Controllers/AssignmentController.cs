@@ -6,7 +6,7 @@ namespace webapi_course.Controllers;
 
 [Route("api/[controller]")]
 public class AssignmentController : ControllerBase {
-  IAssignmentService assignmentService; ///
+  protected readonly IAssignmentService assignmentService; ///
 
   public AssignmentController(IAssignmentService service) { 
     assignmentService = service;
